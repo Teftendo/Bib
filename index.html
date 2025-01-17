@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowShop</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Flow-Shop Online</h1>
+            </h2>Магазин специализирущийся на продаже цветов онлайн</h2>
+        </header>
+        <main>
+            <section class="products">
+                
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="1001 красная роза" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1001 красная роза</h3>
+                        <p>Букет из 1001 красной розы - это символ любви, страсти и романтики.</p>
+                        <p class="price">79 990 руб.</p>
+                        <button onclick="addToCart('1001 красная роза', 79990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="1001 белая роза" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1001 белая роза</h3>
+                        <p>Букет из 1001 белой розы - это символ чистоты и изысканности.</p>
+                        <p class="price">79 990 руб.</p>
+                        <button onclick="addToCart('1001 белая роза', 79990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="Розы в форме сердца" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Розы в форме сердца</h3>
+                        <p>Букет роз в форме сердца - идеальный подарок для любимых.</p>
+                        <p class="price">89 990 руб.</p>
+                        <button onclick="addToCart('Розы в форме сердца', 89990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="Розы с цифрой" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Розы с цифрой</h3>
+                        <p>Букет роз с цифрой - отличный выбор для юбилея.</p>
+                        <p class="price">94 990 руб.</p>
+                        <button onclick="addToCart('Розы с цифрой', 94990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="Букет микс" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Букет микс</h3>
+                        <p>Смесь роз различных цветов для тех, кто любит яркость.</p>
+                        <p class="price">84 990 руб.</p>
+                        <button onclick="addToCart('Букет микс', 84990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="Розы в коробке" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Розы в коробке</h3>
+                        <p>Розы, аккуратно упакованные в стильную коробку.</p>
+                        <p class="price">89 990 руб.</p>
+                        <button onclick="addToCart('Розы в коробке', 89990)">Купить</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="src/images/roses.jpg" alt="1001 роза в корзине" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1001 роза в корзине</h3>
+                        <p>Большая корзина из 1001 роз для торжественных событий.</p>
+                        <p class="price">99 990 руб.</p>
+                        <button onclick="addToCart('1001 роза в корзине', 99990)">Купить</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <button class="cart-button" onclick="toggleCart()">Корзина</button>
+            
+            <aside class="cart">
+                <h3>Корзина</h3>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Итоговая сумма: 0 руб.</p>
+            </aside>
+        </main>
+        <footer>
+            <p>Представляю вам шаблон сайта по продаже цветов онлайн</p>
+        </footer>
+        <script src="src/js/script.js"></script>
+    </div>
+</body>
+</html>
